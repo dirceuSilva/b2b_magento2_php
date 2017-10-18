@@ -16,4 +16,4 @@ if [ ! -f "$targetdir/composer.json" ]; then
 fi
 
 echo "Found a composer.json on $targetdir. Installing packages dependencies..."
-composer install
+composer -vvv install --no-ansi --no-interaction --optimize-autoloader
